@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Divider, Row, Col, Button } from "antd";
 import { useRouter } from "next/router";
+import Mqtt from "@/components/mqtt";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function Home() {
             <Button type="primary" onClick={() => router.push('/services')}>Go to Services page</Button>
           </Col>
         </Row>
+        <Mqtt/>
       </main>
     </>
   );
