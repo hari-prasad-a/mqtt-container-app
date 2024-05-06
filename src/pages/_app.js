@@ -49,10 +49,6 @@ export default function App({ Component, pageProps }) {
               {
                 label: <Link href={'/services'} >Services</Link>,
                 key: 'services'
-              },
-              {
-                label: <Link href={'/about-us'} >About us</Link>,
-                key: 'about-us'
               }
             ]}
             style={{

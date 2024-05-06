@@ -9,8 +9,7 @@ const nextConfig = {
       new NextFederationPlugin({
         name: 'home',
         remotes: {
-          services: `services@${process.env.NEXT_PUBLIC_SERVICES_APP}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
-          about: `about@${process.env.NEXT_PUBLIC_ABOUT_US_APP}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`
+          services: `services@${process.env.NEXT_PUBLIC_SERVICES_APP}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {},

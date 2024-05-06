@@ -24,9 +24,6 @@ export default function Home() {
           <Col span={6}>
             <Button type="primary" onClick={() => router.push('/services')}>Go to Services page</Button>
           </Col>
-          <Col span={6}>
-            <Button onClick={() => router.push('/about-us')}>Go to About us page</Button>
-          </Col>
         </Row>
       </main>
     </>
